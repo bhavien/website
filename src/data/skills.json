@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Kotlin", "icon": "kotlin" },
+  { "id": 2, "name": "Java", "icon": "java" },
+  { "id": 3, "name": "Jetpack Compose", "icon": "jetpack" },
+  { "id": 4, "name": "Firebase", "icon": "firebase" },
+  { "id": 5, "name": "Room DB", "icon": "db" },
+  { "id": 6, "name": "AWS (DynamoDB, Cognito)", "icon": "aws" },
+  { "id": 7, "name": "REST APIs", "icon": "api" },
+  { "id": 8, "name": "Payment Integration", "icon": "payment" }
+]

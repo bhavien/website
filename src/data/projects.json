@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Photo Resizer: Reduce Size",
+    "description": "Professional quality photo resizing and background removal. Optimize your images for faster sharing and storage without losing quality.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.resizephotoandbackgroundremover",
+    "category": "Photography"
+  },
+  {
+    "id": 2,
+    "name": "Auto Reply Messanger",
+    "description": "Powerful automated messaging tool. Set custom auto-responses for WhatsApp, Telegram, and other popular messaging platforms with ease.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.autoreplymessenger",
+    "category": "Communication"
+  },
+  {
+    "id": 3,
+    "name": "Smart Calculator – GST EMI",
+    "description": "An all-in-one multipurpose calculator featuring GST, EMI, and financial calculations designed with absolute precision and ease of use.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.calculatorformultipurpose",
+    "category": "Finance"
+  },
+  {
+    "id": 4,
+    "name": "Call Blocker – Spam Protection",
+    "description": "Next-gen call management and spam protection. Shield your smartphone from unwanted calls and block spam numbers globally.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.callblocker",
+    "category": "Tools"
+  }
+]
