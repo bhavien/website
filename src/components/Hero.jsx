@@ -47,8 +47,7 @@ const Hero = () => {
           <motion.div variants={itemVariants}>
             <h1 className="heading-xl">
               Designing <br />
-              <span className="text-gradient">Premium</span> Mobile <br />
-              <span className="outline-text">Experiences.</span>
+              <span className="text-gradient">Premium</span> Mobile
             </h1>
           </motion.div>
 
@@ -68,22 +67,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        <div className="hero-visuals">
-          <div className="mockup-container">
-             <div className="mockup-frame">
-                <div className="mockup-inner">
-                  <div className="mockup-screen">
-                    <div className="status-bar"></div>
-                    <div className="header-sim"></div>
-                    <div className="card-sim"></div>
-                    <div className="card-sim row"></div>
-                    <div className="card-sim row"></div>
-                    <div className="fab-sim"></div>
-                  </div>
-                </div>
-             </div>
-          </div>
-        </div>
+
       </div>
 
       <style>{`
@@ -96,10 +80,10 @@ const Hero = () => {
         }
         
         .hero-container {
-          display: grid;
-          grid-template-columns: 1.2fr 0.8fr;
+          display: flex;
+          flex-direction: column;
           align-items: center;
-          gap: 4rem;
+          text-align: center;
         }
 
         .hero-badge {
@@ -122,7 +106,7 @@ const Hero = () => {
         }
 
         .hero-subtext {
-          max-width: 500px; 
+          max-width: 650px; 
           margin-bottom: 3rem;
           color: var(--text-secondary);
         }
@@ -130,50 +114,11 @@ const Hero = () => {
         .hero-actions {
           display: flex;
           gap: 1.5rem;
-        }
-
-        .hero-visuals {
-          display: flex;
           justify-content: center;
         }
 
-        .mockup-frame {
-          width: 280px;
-          height: 560px;
-          padding: 10px;
-          border-radius: 40px;
-          background: #111;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
-        }
-
-        .mockup-inner {
-          width: 100%;
-          height: 100%;
-          border-radius: 30px;
-          overflow: hidden;
-          background: #000;
-          position: relative;
-        }
-
-        .mockup-screen {
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-        }
-
-        .status-bar { height: 10px; width: 50px; background: rgba(255,255,255,0.1); border-radius: 4px; margin-bottom: 10px; }
-        .header-sim { height: 140px; width: 100%; background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%); border-radius: 16px; opacity: 0.7; }
-        .card-sim { height: 35px; width: 100%; background: rgba(255,255,255,0.05); border-radius: 10px; }
-        .card-sim.row { height: 50px; display: flex; gap: 8px; }
-        .fab-sim { position: absolute; bottom: 20px; right: 20px; width: 40px; height: 40px; background: var(--accent-primary); border-radius: 50%; }
-
         @media (max-width: 1100px) {
-          .hero-container { grid-template-columns: 1fr; text-align: center; }
-          .hero-content { display: flex; flex-direction: column; align-items: center; }
-          .hero-visuals { margin-top: 3rem; }
-          .mockup-frame { width: 240px; height: 480px; }
+          .hero-section { padding-top: 150px; }
         }
       `}</style>
     </section>

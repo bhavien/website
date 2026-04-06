@@ -6,12 +6,9 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
-import FeatureSpotlight from './components/FeatureSpotlight';
-import Stats from './components/Stats';
 import MobileNav from './components/MobileNav';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
 import AnimatedBackground from './components/AnimatedBackground';
 import SectionReveal from './components/SectionReveal';
 
@@ -37,8 +34,6 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
-        <FeatureSpotlight />
-        <Stats />
         <Contact />
       </main>
 

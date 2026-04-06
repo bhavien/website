@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="logo-icon">
             <Zap size={18} />
           </div>
-          <span className="logo-text">Bhavin<span className="text-gradient"> Solanki</span></span>
+          <span className="logo-text">Bhavin Solanki</span>
         </a>
         
         <ul className="nav-links">
