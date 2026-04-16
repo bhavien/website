@@ -16,6 +16,8 @@ import {
 } from 'lucide-react';
 import Magnetic from './Magnetic';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const Projects = () => {
     const getAppIcon = (name) => {
         const lowerName = name.toLowerCase();
@@ -202,7 +204,7 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
         <div className="card-header">
             <div className="app-icon-wrapper">
                 {app.image ? (
-                  <img src={app.image} alt={app.name} className="app-icon-img" />
+                  <img src={`${baseUrl}${app.image}`} alt={app.name} className="app-icon-img" />
                 ) : (
                   getAppIcon(app.name)
                 )}

@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Star } from 'lucide-react';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const ComingSoonFull = () => {
     return (
         <section className="coming-soon-full">
@@ -59,7 +61,7 @@ const ComingSoonFull = () => {
                             }}
                             className="mascot-wrapper"
                         >
-                            <img src="/spacebrain/mascot.png" alt="Mascot" className="mascot-img" />
+                            <img src={`${baseUrl}spacebrain/mascot.png`} alt="Mascot" className="mascot-img" />
                             <div className="mascot-aura"></div>
                         </motion.div>
                         
@@ -67,13 +69,13 @@ const ComingSoonFull = () => {
                             <motion.img 
                                 initial={{ x: -20, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
-                                src="/spacebrain/screenshot1.png" 
+                                src={`${baseUrl}spacebrain/screenshot1.png`} 
                                 className="ss-img ss-left" 
                             />
                             <motion.img 
                                 initial={{ y: 40, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
-                                src="/spacebrain/screenshot2.png" 
+                                src={`${baseUrl}spacebrain/screenshot2.png`} 
                                 className="ss-img ss-center" 
                             />
                         </div>
@@ -122,7 +124,7 @@ const ComingSoonFull = () => {
                     content: '';
                     position: absolute;
                     top: 0; left: 0; width: 100%; height: 100%;
-                    background: url('/spacebrain/feature.png') center/cover no-repeat;
+                    background: url('${baseUrl}spacebrain/feature.png') center/cover no-repeat;
                     opacity: 0.15;
                     mix-blend-mode: overlay;
                     pointer-events: none;

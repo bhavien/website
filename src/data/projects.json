@@ -4,7 +4,7 @@
     "name": "Space Brain Games",
     "description": "An immersive educational gaming suite designed to challenge and sharpen young minds through cosmic missions and brain-teasing puzzles. Launching soon.",
     "link": "#",
-    "image": "/spacebrain/icon.png",
+    "image": "spacebrain/icon.png",
     "category": "Gaming & Education",
     "isUpcoming": true
   },
