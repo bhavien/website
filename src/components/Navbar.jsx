@@ -28,6 +28,7 @@ const Navbar = () => {
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#games">Games</a></li>
           <li><a href="#skills">Stack</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -48,7 +49,7 @@ const Navbar = () => {
       <style>{`
         .navbar-wrapper {
           position: fixed;
-          top: 0; left: 0; right: 0;
+          top: 40px; left: 0; right: 0;
           height: 80px;
           display: flex;
           align-items: center;
@@ -62,6 +63,7 @@ const Navbar = () => {
           backdrop-filter: blur(10px);
           border-bottom: 1px solid var(--glass-border);
           height: 70px;
+          top: 0;
         }
 
         .nav-content {

@@ -49,11 +49,11 @@ const About = () => {
               </div>
             </div>
 
-            <div className="vision-card glass-panel">
-               <Sparkles size={28} className="vision-icon" />
+            <div className="vision-card glass-panel upcoming-vision">
                <div className="vision-content">
-                  <h4>What Drives Me</h4>
-                  <p>Obessing over frame-rates, battery efficiency, and intuitive interactions to create software that isn't just functional, but delightful.</p>
+                  <div className="vision-badge">COMING MAY 2026</div>
+                  <h4>Next Phase: Space Brain Academy</h4>
+                  <p>Developing a revolutionary educational gaming platform that combines advanced cognitive science with immersive mobile gameplay.</p>
                </div>
             </div>
           </div>
@@ -160,6 +160,23 @@ const About = () => {
         .vision-icon {
           color: var(--accent-secondary);
           flex-shrink: 0;
+        }
+
+        .upcoming-vision {
+          background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(30, 27, 75, 0.2) 100%);
+          border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .vision-badge {
+          display: inline-block;
+          font-size: 0.65rem;
+          font-weight: 800;
+          color: var(--accent-primary);
+          background: rgba(139, 92, 246, 0.1);
+          padding: 4px 10px;
+          border-radius: 100px;
+          margin-bottom: 12px;
+          letter-spacing: 0.05em;
         }
 
         .vision-content h4 {

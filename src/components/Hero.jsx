@@ -44,6 +44,14 @@ const Hero = () => {
             <span>SENIOR ANDROID ARCHITECT</span>
           </motion.div>
 
+          <motion.div
+            variants={itemVariants}
+            className="hero-teaser"
+          >
+            <span className="teaser-dot"></span>
+            NEW MISSION: <span className="highlight">SPACE BRAIN GAMES</span> COMING MAY 2026
+          </motion.div>
+
           <motion.div variants={itemVariants}>
             <h1 className="heading-xl">
               Designing <br />
@@ -98,6 +106,37 @@ const Hero = () => {
           color: var(--accent-primary);
           font-size: 0.8rem;
           font-weight: 700;
+        }
+
+        .hero-teaser {
+          font-size: 0.75rem;
+          font-weight: 800;
+          letter-spacing: 0.15em;
+          color: var(--text-dim);
+          margin-bottom: 2.5rem;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+        }
+
+        .teaser-dot {
+          width: 6px;
+          height: 6px;
+          background: var(--accent-primary);
+          border-radius: 50%;
+          box-shadow: 0 0 10px var(--accent-primary);
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.5); opacity: 0.5; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+
+        .hero-teaser .highlight {
+          color: #fff;
         }
 
         .outline-text {

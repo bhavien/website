@@ -1,5 +1,13 @@
 [
   {
+    "id": 0,
+    "name": "Space Brain Games",
+    "description": "An immersive educational gaming suite designed to challenge and sharpen young minds through cosmic missions and brain-teasing puzzles. Launching soon.",
+    "link": "#",
+    "category": "Gaming & Education",
+    "isUpcoming": true
+  },
+  {
     "id": 1,
     "name": "Photo Resizer: Reduce Size",
     "description": "Professional quality photo resizing and background removal. Optimize your images for faster sharing and storage without losing quality.",

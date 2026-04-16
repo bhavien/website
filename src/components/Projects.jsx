@@ -10,7 +10,9 @@ import {
   Image as ImageIcon,
   TrendingUp,
   Download,
-  Calculator
+  Calculator,
+  Rocket,
+  Calendar
 } from 'lucide-react';
 import Magnetic from './Magnetic';
 
@@ -21,6 +23,7 @@ const Projects = () => {
         if (lowerName.includes('auto reply') || lowerName.includes('autoreply')) return <MessageSquareDiff size={32} />;
         if (lowerName.includes('gallery') || lowerName.includes('photo resizer')) return <ImageIcon size={32} />;
         if (lowerName.includes('calculator')) return <Calculator size={32} />;
+        if (lowerName.includes('space brain')) return <Rocket size={32} />;
         return <Smartphone size={32} />;
     };
 
@@ -227,17 +230,39 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
             </div>
           </div>
 
-          <Magnetic>
-            <a 
-              href={app.link} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-playstore"
-            >
-              <ExternalLink size={20} />
-            </a>
-          </Magnetic>
+          {app.isUpcoming ? (
+            <div className="upcoming-badge">
+              <Calendar size={14} /> MAY 2026
+            </div>
+          ) : (
+            <Magnetic>
+              <a 
+                href={app.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-playstore"
+              >
+                <ExternalLink size={20} />
+              </a>
+            </Magnetic>
+          )}
       </div>
+      
+      <style jsx>{`
+        .upcoming-badge {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 8px 16px;
+          background: rgba(139, 92, 246, 0.1);
+          border: 1px solid rgba(139, 92, 246, 0.3);
+          color: #a78bfa;
+          border-radius: 100px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+        }
+      `}</style>
     </div>
   );
 };
