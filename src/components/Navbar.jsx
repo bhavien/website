@@ -49,7 +49,7 @@ const Navbar = () => {
       <style>{`
         .navbar-wrapper {
           position: fixed;
-          top: 40px; left: 0; right: 0;
+          top: 0; left: 0; right: 0;
           height: 80px;
           display: flex;
           align-items: center;

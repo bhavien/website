@@ -11,8 +11,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
 import SectionReveal from './components/SectionReveal';
-import TopBanner from './components/TopBanner';
 import GameShowcase from './components/GameShowcase';
+import ComingSoonFull from './components/ComingSoonFull';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -27,12 +27,12 @@ function App() {
     <div className="portfolio-app">
       <AnimatedBackground />
       
-      <TopBanner />
       <Navbar />
       <MobileNav />
       
       <main>
         <Hero />
+        <ComingSoonFull />
         <About />
         <Skills />
         <Experience />
