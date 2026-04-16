@@ -118,6 +118,17 @@ const ComingSoonFull = () => {
                     padding: 100px 0;
                 }
 
+                .coming-soon-full::after {
+                    content: '';
+                    position: absolute;
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background: url('/spacebrain/feature.png') center/cover no-repeat;
+                    opacity: 0.15;
+                    mix-blend-mode: overlay;
+                    pointer-events: none;
+                    z-index: 1;
+                }
+
                 .star-background {
                     position: absolute;
                     top: 0; left: 0; width: 100%; height: 100%;
