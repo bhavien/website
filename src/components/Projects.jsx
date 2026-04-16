@@ -201,7 +201,11 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
       <div className="card-top">
         <div className="card-header">
             <div className="app-icon-wrapper">
-                {getAppIcon(app.name)}
+                {app.image ? (
+                  <img src={app.image} alt={app.name} className="app-icon-img" />
+                ) : (
+                  getAppIcon(app.name)
+                )}
             </div>
             <div className="app-meta">
                 <h3 className="heading-sm">{app.name}</h3>
@@ -261,6 +265,13 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
           font-size: 0.8rem;
           font-weight: 700;
           letter-spacing: 0.05em;
+        }
+
+        .app-icon-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 17px;
         }
       `}</style>
     </div>

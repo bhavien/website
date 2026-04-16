@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, Brain, Sparkles, Star } from 'lucide-react';
+import { Sparkles, Star } from 'lucide-react';
 
 const ComingSoonFull = () => {
     return (
@@ -50,33 +50,47 @@ const ComingSoonFull = () => {
                     <div className="cs-visual-main">
                         <motion.div
                             animate={{ 
-                                y: [0, -20, 0],
-                                rotate: [0, 5, -5, 0]
+                                y: [0, -15, 0],
                             }}
                             transition={{ 
-                                duration: 6,
+                                duration: 5,
                                 repeat: Infinity,
                                 ease: "easeInOut"
                             }}
-                            className="floating-rocket-wrapper"
+                            className="mascot-wrapper"
                         >
-                            <div className="rocket-glow"></div>
-                            <Rocket size={120} className="main-rocket-icon" />
+                            <img src="/spacebrain/mascot.png" alt="Mascot" className="mascot-img" />
+                            <div className="mascot-aura"></div>
                         </motion.div>
                         
-                        <div className="cs-info-cards">
-                            <div className="cs-card">
-                                <span className="card-label">Status</span>
-                                <span className="card-value pulse-text">PRE-LAUNCH</span>
-                            </div>
-                            <div className="cs-card">
-                                <span className="card-label">Target Launch</span>
-                                <span className="card-value highlight">MAY 2026</span>
-                            </div>
-                            <div className="cs-card">
-                                <span className="card-label">Mission</span>
-                                <span className="card-value">BRAIN MASTERY</span>
-                            </div>
+                        <div className="screenshot-peek">
+                            <motion.img 
+                                initial={{ x: -20, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                src="/spacebrain/screenshot1.png" 
+                                className="ss-img ss-left" 
+                            />
+                            <motion.img 
+                                initial={{ y: 40, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                src="/spacebrain/screenshot2.png" 
+                                className="ss-img ss-center" 
+                            />
+                        </div>
+                    </div>
+
+                    <div className="cs-info-cards">
+                        <div className="cs-card">
+                            <span className="card-label">Status</span>
+                            <span className="card-value pulse-text">PRE-LAUNCH</span>
+                        </div>
+                        <div className="cs-card">
+                            <span className="card-label">Target Launch</span>
+                            <span className="card-value highlight">MAY 2026</span>
+                        </div>
+                        <div className="cs-card">
+                            <span className="card-label">Mission</span>
+                            <span className="card-value">BRAIN MASTERY</span>
                         </div>
                     </div>
 
@@ -101,7 +115,7 @@ const ComingSoonFull = () => {
                     align-items: center;
                     position: relative;
                     overflow: hidden;
-                    padding: 80px 0;
+                    padding: 100px 0;
                 }
 
                 .star-background {
@@ -120,10 +134,66 @@ const ComingSoonFull = () => {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 3rem;
+                    gap: 4rem;
                     position: relative;
                     z-index: 2;
+                    width: 100%;
                 }
+
+                .cs-visual-main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+
+                .mascot-wrapper {
+                    position: relative;
+                    width: 240px;
+                    height: 240px;
+                    z-index: 5;
+                    margin-bottom: 2rem;
+                }
+
+                .mascot-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.4));
+                }
+
+                .mascot-aura {
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 300px; height: 300px;
+                    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+                    z-index: -1;
+                }
+
+                .screenshot-peek {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    margin-top: -60px;
+                    perspective: 1000px;
+                }
+
+                .ss-img {
+                    width: 220px;
+                    border-radius: 18px;
+                    border: 4px solid rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+                    transition: 0.3s;
+                }
+
+                .ss-img:hover {
+                    transform: translateZ(20px) scale(1.05);
+                    border-color: var(--accent-primary);
+                }
+
+                .ss-left { transform: rotateY(15deg) rotateX(5deg); }
+                .ss-center { transform: rotateY(-15deg) rotateX(5deg); }
 
                 .cs-badge {
                     display: inline-flex;
@@ -141,45 +211,18 @@ const ComingSoonFull = () => {
                 }
 
                 .cs-title {
-                    font-size: 5rem;
+                    font-size: 4.5rem;
                     line-height: 1;
                     font-weight: 900;
                     margin-bottom: 1.5rem;
                 }
 
                 .cs-subtitle {
-                    font-size: 1.25rem;
+                    font-size: 1.15rem;
                     color: var(--text-secondary);
-                    max-width: 700px;
+                    max-width: 650px;
                     margin: 0 auto;
                     line-height: 1.6;
-                }
-
-                .cs-visual-main {
-                    position: relative;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 4rem;
-                }
-
-                .floating-rocket-wrapper {
-                    position: relative;
-                }
-
-                .main-rocket-icon {
-                    color: #fff;
-                    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
-                }
-
-                .rocket-glow {
-                    position: absolute;
-                    top: 50%; left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 200px; height: 200px;
-                    background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
-                    z-index: -1;
                 }
 
                 .cs-info-cards {
@@ -193,8 +236,8 @@ const ComingSoonFull = () => {
                 .cs-card {
                     padding: 24px;
                     background: rgba(255, 255, 255, 0.03);
-                    border: 1px solid rgba(255, 255, 255, 0.05);
-                    border-radius: 24px;
+                    border: 1px solid var(--glass-border);
+                    border-radius: 20px;
                     display: flex;
                     flex-direction: column;
                     gap: 8px;
@@ -203,12 +246,12 @@ const ComingSoonFull = () => {
 
                 .cs-card:hover {
                     background: rgba(255, 255, 255, 0.05);
-                    border-color: rgba(139, 92, 246, 0.3);
+                    border-color: var(--accent-primary);
                     transform: translateY(-5px);
                 }
 
                 .card-label {
-                    font-size: 0.7rem;
+                    font-size: 0.65rem;
                     font-weight: 800;
                     color: var(--text-dim);
                     text-transform: uppercase;
@@ -216,7 +259,7 @@ const ComingSoonFull = () => {
                 }
 
                 .card-value {
-                    font-size: 1.4rem;
+                    font-size: 1.25rem;
                     font-weight: 800;
                     color: #fff;
                     font-family: 'Outfit';
@@ -237,20 +280,22 @@ const ComingSoonFull = () => {
                 }
 
                 .notify-btn {
-                    padding: 18px 48px;
+                    padding: 16px 40px;
                     background: var(--accent-primary);
                     color: var(--bg-primary);
                     border-radius: 100px;
                     font-weight: 800;
-                    letter-spacing: 0.1em;
+                    letter-spacing: 0.05em;
                     cursor: pointer;
                     box-shadow: 0 10px 30px rgba(0, 242, 255, 0.3);
                 }
 
                 @media (max-width: 768px) {
-                    .cs-title { font-size: 3rem; }
+                    .cs-title { font-size: 2.8rem; }
                     .cs-info-cards { grid-template-columns: 1fr; }
-                    .coming-soon-full { padding: 100px 20px; }
+                    .coming-soon-full { padding: 80px 20px; }
+                    .ss-img { width: 160px; }
+                    .screenshot-peek { margin-top: -40px; }
                 }
             `}</style>
         </section>
