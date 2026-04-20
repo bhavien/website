@@ -9,12 +9,22 @@
     "isUpcoming": true
   },
   {
+    "id": 4,
+    "name": "Call Blocker – Spam Protection",
+    "description": "Next-gen call management and spam protection. Shield your smartphone from unwanted calls and block spam numbers globally.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.callblocker",
+    "category": "Tools",
+    "installs": "2k+",
+    "image": "https://play-lh.googleusercontent.com/p9Cggrn0iTRt2H9Fl6Dqoh3RRwaQCfAr8GSrsAIKyTBv-TX4sHgRr87l3d45VNudzdBVm5TX7wq-8hmvwMM1qw=s512-rw"
+  },
+  {
     "id": 1,
     "name": "Photo Resizer: Reduce Size",
     "description": "Professional quality photo resizing and background removal. Optimize your images for faster sharing and storage without losing quality.",
     "link": "https://play.google.com/store/apps/details?id=com.smartcodies.resizephotoandbackgroundremover",
     "category": "Photography",
-    "installs": "1K+"
+    "installs": "1K+",
+    "image": "https://play-lh.googleusercontent.com/crIW17Hi29SMB2t7ZjhraVPZXJ8zUBzgAoUXUEcXVsAeK0-qlhE_JxgHwlJPyJAzhz2Q-5_W4taakf7kYDdklZc=s512-rw"
   },
   {
     "id": 2,
@@ -22,7 +32,8 @@
     "description": "Powerful automated messaging tool. Set custom auto-responses for WhatsApp, Telegram, and other popular messaging platforms with ease.",
     "link": "https://play.google.com/store/apps/details?id=com.smartcodies.autoreplymessenger",
     "category": "Communication",
-    "installs": "500+"
+    "installs": "500+",
+    "image": "https://play-lh.googleusercontent.com/FzXR5ExFFLVBJ9Foaza6SREfqvVFz51kmT5SESAzbHgyiGIb-1ZYoUxKrldi6gQpyO8YbcHPpOn_l0VrljtJKA=s512-rw"
   },
   {
     "id": 3,
@@ -30,14 +41,7 @@
     "description": "An all-in-one multipurpose calculator featuring GST, EMI, and financial calculations designed with absolute precision and ease of use.",
     "link": "https://play.google.com/store/apps/details?id=com.smartcodies.calculatorformultipurpose",
     "category": "Finance",
-    "installs": "10+"
-  },
-  {
-    "id": 4,
-    "name": "Call Blocker – Spam Protection",
-    "description": "Next-gen call management and spam protection. Shield your smartphone from unwanted calls and block spam numbers globally.",
-    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.callblocker",
-    "category": "Tools",
-    "installs": "2k+"
+    "installs": "10+",
+    "image": "https://play-lh.googleusercontent.com/Q90IADl_Nyg9CKmlq2v_0cx3Qq_UsqTfao_vgo3ph1Gi2Te4ocm62HRa0OqChJo1JytzfK_4nGOlt5fdtoAS=s512-rw"
   }
 ]

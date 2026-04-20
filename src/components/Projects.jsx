@@ -203,7 +203,11 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
         <div className="card-header">
             <div className="app-icon-wrapper">
                 {app.image ? (
-                  <img src={`${baseUrl}${app.image}`} alt={app.name} className="app-icon-img" />
+                  <img 
+                    src={app.image.startsWith('http') ? app.image : `${baseUrl}${app.image}`} 
+                    alt={app.name} 
+                    className="app-icon-img" 
+                  />
                 ) : (
                   getAppIcon(app.name)
                 )}
