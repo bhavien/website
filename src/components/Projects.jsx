@@ -3,7 +3,6 @@ import projectsData from '../data/projects.json';
 import { motion } from 'framer-motion';
 import { 
   ExternalLink, 
-  Star, 
   Smartphone, 
   ShieldAlert, 
   MessageSquareDiff, 
@@ -222,18 +221,14 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
 
       <div className="card-footer">
           <div className="stat-group">
-            <div className="stat-item">
-              <span className="stat-tag">Rating</span>
-              <div className="stat-val" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <Star size={14} fill="#ffd700" color="#ffd700" /> 4.8
+            {!app.isUpcoming && app.installs && (
+              <div className="stat-item">
+                <span className="stat-tag">Installs</span>
+                <div className="stat-val" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <Download size={14} color="var(--accent-primary)" /> {app.installs}
+                </div>
               </div>
-            </div>
-            <div className="stat-item">
-              <span className="stat-tag">Installs</span>
-              <div className="stat-val" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <Download size={14} color="var(--accent-primary)" /> 4k+
-              </div>
-            </div>
+            )}
           </div>
 
           {app.isUpcoming ? (

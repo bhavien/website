@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, Zap, Mail, MapPin } from 'lucide-react';
-import { FaGithub, FaYoutube, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -18,10 +18,8 @@ const Footer = () => {
               Engineering high-scale Android architectures and modern mobile standards since 2018.
             </p>
             <div className="footer-socials">
-              <a href="#" className="footer-social-btn"><FaGithub size={18} /></a>
-              <a href="#" className="footer-social-btn"><FaTwitter size={18} /></a>
+              <a href="https://github.com/bhavien" target="_blank" rel="noopener noreferrer" className="footer-social-btn"><FaGithub size={18} /></a>
               <a href="https://www.linkedin.com/in/bhavin-solanki-20896115b" target="_blank" rel="noopener noreferrer" className="footer-social-btn"><FaLinkedin size={18} /></a>
-              <a href="https://www.youtube.com/channel/UC7M4Bx9GiLYsKbcLJ20jeiQ" target="_blank" className="footer-social-btn"><FaYoutube size={18} /></a>
             </div>
           </div>
 
