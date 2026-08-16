@@ -1,12 +1,12 @@
 import React from 'react';
-import { Download, Users, Smartphone, ShieldCheck, TrendingUp } from 'lucide-react';
+import { Download, Users, Smartphone, Calendar, TrendingUp } from 'lucide-react';
 
 const Stats = () => {
   const stats = [
-    { label: "Total Downloads", value: "4k+", icon: <Download size={24} />, color: "var(--accent-primary)" },
-    { label: "Active Users", value: "1k+", icon: <Users size={24} />, color: "var(--accent-secondary)" },
-    { label: "Production Apps", value: "10+", icon: <Smartphone size={24} />, color: "#ff007f" },
-    { label: "Stability Rate", value: "99.9%", icon: <ShieldCheck size={24} />, color: "#00ff88" }
+    { label: "Total Downloads", value: "3K+", icon: <Download size={24} />, color: "var(--accent-primary)" },
+    { label: "Active Users", value: "1K+", icon: <Users size={24} />, color: "var(--accent-secondary)" },
+    { label: "Apps Published", value: "8", icon: <Smartphone size={24} />, color: "#ff007f" },
+    { label: "Years Building Android Apps", value: "4+", icon: <Calendar size={24} />, color: "#00ff88" }
   ];
 
   return (

@@ -1,17 +1,19 @@
 import React from 'react';
 import projectsData from '../data/projects.json';
 import { motion } from 'framer-motion';
-import { 
-  ExternalLink, 
-  Smartphone, 
-  ShieldAlert, 
-  MessageSquareDiff, 
+import {
+  ExternalLink,
+  Smartphone,
+  ShieldAlert,
+  MessageSquareDiff,
   Image as ImageIcon,
   TrendingUp,
   Download,
   Calculator,
-  Rocket,
-  Calendar
+  Gamepad2,
+  NotebookPen,
+  MapPin,
+  ScanSearch
 } from 'lucide-react';
 import Magnetic from './Magnetic';
 
@@ -22,9 +24,12 @@ const Projects = () => {
         const lowerName = name.toLowerCase();
         if (lowerName.includes('call blocker')) return <ShieldAlert size={32} />;
         if (lowerName.includes('auto reply') || lowerName.includes('autoreply')) return <MessageSquareDiff size={32} />;
-        if (lowerName.includes('gallery') || lowerName.includes('photo resizer')) return <ImageIcon size={32} />;
+        if (lowerName.includes('photo resizer')) return <ImageIcon size={32} />;
         if (lowerName.includes('calculator')) return <Calculator size={32} />;
-        if (lowerName.includes('space brain')) return <Rocket size={32} />;
+        if (lowerName.includes('appinspector')) return <ScanSearch size={32} />;
+        if (lowerName.includes('find near me')) return <MapPin size={32} />;
+        if (lowerName.includes('papernote')) return <NotebookPen size={32} />;
+        if (lowerName.includes('snake arena')) return <Gamepad2 size={32} />;
         return <Smartphone size={32} />;
     };
 
@@ -33,21 +38,20 @@ const Projects = () => {
             <div className="container">
                 <div className="section-header">
                     <div className="section-badge">
-                        <TrendingUp size={16} /> Featured Masterpieces
+                        <TrendingUp size={16} /> Live on Google Play
                     </div>
                     <h2 className="heading-md">Play Store <span className="text-gradient">Portfolio</span></h2>
                     <p className="text-lg section-desc">
-                        Over 10+ production-grade applications engineered with precision and deployed to thousands of active users.
+                        8 published Android applications, built and maintained under the Smart Codies developer account.
                     </p>
                 </div>
 
                 <div className="projects-grid">
-                    {projectsData.map((app, index) => (
-                        <ProjectCard 
-                          key={app.id} 
-                          app={app} 
-                          index={index} 
-                          getAppIcon={getAppIcon} 
+                    {projectsData.map((app) => (
+                        <ProjectCard
+                          key={app.id}
+                          app={app}
+                          getAppIcon={getAppIcon}
                         />
                     ))}
                 </div>
@@ -196,7 +200,7 @@ const Projects = () => {
     );
 };
 
-const ProjectCard = ({ app, index, getAppIcon }) => {
+const ProjectCard = ({ app, getAppIcon }) => {
   return (
     <div className="project-card-v2">
       <div className="card-top">
@@ -225,7 +229,7 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
 
       <div className="card-footer">
           <div className="stat-group">
-            {!app.isUpcoming && app.installs && (
+            {app.installs && (
               <div className="stat-item">
                 <span className="stat-tag">Installs</span>
                 <div className="stat-val" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
@@ -235,39 +239,19 @@ const ProjectCard = ({ app, index, getAppIcon }) => {
             )}
           </div>
 
-          {app.isUpcoming ? (
-            <div className="upcoming-badge">
-              <Calendar size={14} /> MAY 2026
-            </div>
-          ) : (
-            <Magnetic>
-              <a 
-                href={app.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn-playstore"
-              >
-                <ExternalLink size={20} />
-              </a>
-            </Magnetic>
-          )}
+          <Magnetic>
+            <a
+              href={app.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-playstore"
+            >
+              <ExternalLink size={20} />
+            </a>
+          </Magnetic>
       </div>
-      
-      <style jsx>{`
-        .upcoming-badge {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          padding: 8px 16px;
-          background: rgba(139, 92, 246, 0.1);
-          border: 1px solid rgba(139, 92, 246, 0.3);
-          color: #a78bfa;
-          border-radius: 100px;
-          font-size: 0.8rem;
-          font-weight: 700;
-          letter-spacing: 0.05em;
-        }
 
+      <style jsx>{`
         .app-icon-img {
           width: 100%;
           height: 100%;

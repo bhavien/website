@@ -1,47 +1,74 @@
 [
   {
-    "id": 0,
-    "name": "Space Brain Games",
-    "description": "An immersive educational gaming suite designed to challenge and sharpen young minds through cosmic missions and brain-teasing puzzles. Launching soon.",
-    "link": "#",
-    "image": "spacebrain/icon.png",
-    "category": "Gaming & Education",
-    "isUpcoming": true
-  },
-  {
-    "id": 4,
-    "name": "Call Blocker – Spam Protection",
-    "description": "Next-gen call management and spam protection. Shield your smartphone from unwanted calls and block spam numbers globally.",
+    "id": 1,
+    "name": "Call Blocker Plus",
+    "description": "Block unknown, private, and unwanted calls with advanced smart-blocking rules that keep spam off your phone.",
     "link": "https://play.google.com/store/apps/details?id=com.smartcodies.callblocker",
     "category": "Tools",
-    "installs": "2k+",
-    "image": "https://play-lh.googleusercontent.com/p9Cggrn0iTRt2H9Fl6Dqoh3RRwaQCfAr8GSrsAIKyTBv-TX4sHgRr87l3d45VNudzdBVm5TX7wq-8hmvwMM1qw=s512-rw"
-  },
-  {
-    "id": 1,
-    "name": "Photo Resizer: Reduce Size",
-    "description": "Professional quality photo resizing and background removal. Optimize your images for faster sharing and storage without losing quality.",
-    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.resizephotoandbackgroundremover",
-    "category": "Photography",
     "installs": "1K+",
-    "image": "https://play-lh.googleusercontent.com/crIW17Hi29SMB2t7ZjhraVPZXJ8zUBzgAoUXUEcXVsAeK0-qlhE_JxgHwlJPyJAzhz2Q-5_W4taakf7kYDdklZc=s512-rw"
+    "image": "icons/callblocker.webp"
   },
   {
     "id": 2,
     "name": "Auto Reply Messanger",
-    "description": "Powerful automated messaging tool. Set custom auto-responses for WhatsApp, Telegram, and other popular messaging platforms with ease.",
+    "description": "Automatically reply to messages when you're busy, driving, or away, across your favorite messaging apps.",
     "link": "https://play.google.com/store/apps/details?id=com.smartcodies.autoreplymessenger",
     "category": "Communication",
-    "installs": "500+",
-    "image": "https://play-lh.googleusercontent.com/FzXR5ExFFLVBJ9Foaza6SREfqvVFz51kmT5SESAzbHgyiGIb-1ZYoUxKrldi6gQpyO8YbcHPpOn_l0VrljtJKA=s512-rw"
+    "installs": "1K+",
+    "image": "icons/autoreplymessenger.webp"
   },
   {
     "id": 3,
+    "name": "Photo Resizer: Reduce Size",
+    "description": "Resize photos, compress file size, and remove backgrounds without losing quality, including passport photos.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.resizephotoandbackgroundremover",
+    "category": "Photography",
+    "installs": "1K+",
+    "image": "icons/photoresizer.webp"
+  },
+  {
+    "id": 4,
+    "name": "AppInspector: APK Analyzer",
+    "description": "Analyze installed SDKs, export APKs, and audit app permissions and technical details on your device.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.appanalyzer",
+    "category": "Developer Tools",
+    "installs": "100+",
+    "image": "icons/appinspector.webp"
+  },
+  {
+    "id": 5,
+    "name": "Find Near Me Places",
+    "description": "Discover popular places and services near you in just a few simple steps.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.findnearme",
+    "category": "Travel & Local",
+    "installs": "100+",
+    "image": "icons/findnearme.webp"
+  },
+  {
+    "id": 6,
     "name": "Smart Calculator – GST EMI",
-    "description": "An all-in-one multipurpose calculator featuring GST, EMI, and financial calculations designed with absolute precision and ease of use.",
+    "description": "An all-in-one calculator for GST, EMI, SIP, currency conversion, and everyday financial calculations.",
     "link": "https://play.google.com/store/apps/details?id=com.smartcodies.calculatorformultipurpose",
     "category": "Finance",
     "installs": "10+",
-    "image": "https://play-lh.googleusercontent.com/Q90IADl_Nyg9CKmlq2v_0cx3Qq_UsqTfao_vgo3ph1Gi2Te4ocm62HRa0OqChJo1JytzfK_4nGOlt5fdtoAS=s512-rw"
+    "image": "icons/calculator.webp"
+  },
+  {
+    "id": 7,
+    "name": "Snake Arena: Slither.io Battle",
+    "description": "A fast-paced multiplayer snake arena. Slither, grow, and battle players from around the world.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.snakeio.android",
+    "category": "Games",
+    "installs": "10+",
+    "image": "icons/snakearena.webp"
+  },
+  {
+    "id": 8,
+    "name": "PaperNote: Notepad & Notes",
+    "description": "A simple, focused notepad for notes, checklists, to-do lists, sketches, and locked private notes.",
+    "link": "https://play.google.com/store/apps/details?id=com.smartcodies.papernote",
+    "category": "Productivity",
+    "installs": "New",
+    "image": "icons/papernote.webp"
   }
 ]

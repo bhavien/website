@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Award, Sparkles } from 'lucide-react';
+import { User, Award, Rocket } from 'lucide-react';
 
 const About = () => {
   return (
@@ -39,23 +39,31 @@ const About = () => {
           <div className="about-side">
             <div className="stat-row">
               <div className="stat-card glass-panel">
-                 <div className="stat-num text-gradient">10+</div>
-                 <div className="stat-label">Projects Shipped</div>
+                 <div className="stat-num text-gradient">8</div>
+                 <div className="stat-label">Apps Published</div>
               </div>
 
               <div className="stat-card glass-panel">
-                 <div className="stat-num text-gradient">4k+</div>
+                 <div className="stat-num text-gradient">3K+</div>
                  <div className="stat-label">Global Downloads</div>
               </div>
             </div>
 
-            <div className="vision-card glass-panel upcoming-vision">
-               <div className="vision-content">
-                  <div className="vision-badge">COMING MAY 2026</div>
-                  <h4>Next Phase: Space Brain Academy</h4>
-                  <p>Developing a revolutionary educational gaming platform that combines advanced cognitive science with immersive mobile gameplay.</p>
+            <a
+              href="https://play.google.com/store/apps/developer?id=Smart+Codies"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="vision-card glass-panel upcoming-vision"
+            >
+               <div className="vision-icon-wrapper">
+                  <Rocket size={22} />
                </div>
-            </div>
+               <div className="vision-content">
+                  <div className="vision-badge">SMART CODIES</div>
+                  <h4>Live on Google Play</h4>
+                  <p>All of my apps are published and actively maintained under the Smart Codies developer account.</p>
+               </div>
+            </a>
           </div>
           
         </div>
@@ -157,8 +165,13 @@ const About = () => {
           align-items: center;
         }
 
-        .vision-icon {
-          color: var(--accent-secondary);
+        .vision-icon-wrapper {
+          width: 44px; height: 44px;
+          border-radius: 12px;
+          background: rgba(139, 92, 246, 0.1);
+          border: 1px solid rgba(139, 92, 246, 0.2);
+          display: flex; align-items: center; justify-content: center;
+          color: #a78bfa;
           flex-shrink: 0;
         }
 

@@ -1,5 +1,7 @@
 import React from 'react';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const AnimatedBackground = () => {
   return (
     <div className="simple-bg-container">
@@ -24,7 +26,7 @@ const AnimatedBackground = () => {
           z-index: -4;
           opacity: 0.01;
           pointer-events: none;
-          background-image: url("/noise.svg");
+          background-image: url("${baseUrl}noise.svg");
         }
 
         .subtle-gradient {

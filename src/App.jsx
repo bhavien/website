@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Stats from './components/Stats';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -11,34 +11,23 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
 import SectionReveal from './components/SectionReveal';
-import GameShowcase from './components/GameShowcase';
-import ComingSoonFull from './components/ComingSoonFull';
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Simulate initial load sequence
-    const timer = setTimeout(() => setIsLoaded(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="portfolio-app">
       <AnimatedBackground />
-      
+
       <Navbar />
       <MobileNav />
-      
+
       <main>
         <Hero />
-        <ComingSoonFull />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <GameShowcase />
-        <Contact />
+        <SectionReveal><Stats /></SectionReveal>
+        <SectionReveal><About /></SectionReveal>
+        <SectionReveal><Skills /></SectionReveal>
+        <SectionReveal><Experience /></SectionReveal>
+        <SectionReveal><Projects /></SectionReveal>
+        <SectionReveal><Contact /></SectionReveal>
       </main>
 
       <Footer />
