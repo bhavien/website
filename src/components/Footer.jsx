@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="footer-logo-text">Bhavin Solanki</span>
             </div>
             <p className="footer-tagline">
-              Engineering high-scale Android architectures and modern mobile standards since 2018.
+              Engineering high-scale Android architectures and modern mobile standards since 2021.
             </p>
             <div className="footer-socials">
               <a href="https://play.google.com/store/apps/developer?id=Smart+Codies" target="_blank" rel="noopener noreferrer" className="footer-social-btn"><FaGooglePlay size={18} /></a>
